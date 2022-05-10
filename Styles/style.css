@@ -133,8 +133,12 @@ header {
 }
 .ultimas_item:hover{
     opacity: 0.5;
-
 }
+
+.ultimas_item:hover img{
+    animation: pulse 1.5s infinite;
+}
+
 .ultimas_item:hover h1{
     color: rgb(85, 185, 85);
 }
@@ -143,14 +147,31 @@ header {
     width: 70%;
     height: 70%;
     border-radius: 0.5rem;
+    transform: scale(1);
+	
 }
 
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1.1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
 
 .ultimas_titulo{
     margin: 1.5rem 1rem;
     margin-bottom: 2rem;
     font-size: 23px;
-    font-family:'Roboto Condensed', sans-serif;
     color: white;
 }
 
@@ -176,8 +197,14 @@ header {
 }
 .pelisyseries_item:hover{
     opacity: 0.5;
+}
+
+.pelisyseries_item:hover img{
+    animation: pulse 1.5s infinite;
+
 
 }
+
 .pelisyseries_item:hover h1{
     color: rgb(85, 185, 85);
 }
@@ -186,6 +213,7 @@ header {
     width: 70%;
     height: 70%;
     border-radius: 0.5rem;
+    transform: scale(1);
 }
 
 .sectionPelis{
