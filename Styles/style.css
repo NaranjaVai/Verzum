@@ -7,7 +7,7 @@
 
 body{
     background-color: #181a1b;
-    height: 100vh;
+    
 }
 
 header {
@@ -235,7 +235,7 @@ header {
 
 
 footer{
-    margin-top: 1rem;
+    padding-top: 1rem;
     background-color: #151419;
     min-height: 150px;
 }
@@ -310,9 +310,9 @@ footer h1{
 }
 
 .botonera{
+    display: grid;
     margin-top: 2rem;
     width: 100%;
-    display: grid;
     grid-template-columns: repeat(13, 1fr);
     grid-template-rows: repeat(2,1fr);
     row-gap: 0.5rem;
@@ -346,6 +346,7 @@ footer h1{
     border-style: solid none none none;
     border-color: #303436;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 
 }
 .peliculas__nombre h1{
@@ -488,7 +489,7 @@ footer h1{
     opacity: 0.5;
 
 }
-.ultimasAgregadas__item:hover h1,.ultimasAgregadas__item:hover h3{
+.ultimasAgregadas__item:hover h1,.ultimasAgregadas__item:hover h3 {
     color: rgb(238, 255, 4);
 }
 
