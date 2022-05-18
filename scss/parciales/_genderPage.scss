@@ -1,0 +1,50 @@
+
+.mainGeneros{
+    background-image: url(../ImagenesGeneros/FondoGeneros.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px;
+}
+
+.genderTypeBox{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        text-align: center;
+        margin-left: 1rem;
+        margin-top: 2rem;
+        row-gap: 2rem;
+        border-style: solid none none none;
+        border-color: white;    /* cambiar a gradiente */
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+ 
+        img{
+            width: 80%;
+            height: 80%;
+            border-radius: 0.5rem;
+        }
+
+        &__item{
+            width: 80%;
+
+            h1{
+                color: white;
+                font-size: 25px;
+                margin-top: 1rem;
+            }
+            &:hover{
+                opacity: 0.5;
+
+                img{
+                    animation: pulse 1.5s infinite;
+                }
+                h1{
+                    color: rgb(43, 207, 79);
+                }
+            }
+        }
+          
+}
+
+

@@ -1,0 +1,48 @@
+
+.sectionPelis{
+    margin-top: 1rem;
+    border-style: solid none none none;
+    border-color: #000;
+    border-width: .3rem;
+}
+    
+.pelisyseries{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    margin-left: 1rem;
+    row-gap: 2rem;
+
+    h1{
+        font-family:'Roboto Condensed', sans-serif;
+        color: white;
+        font-size: 30px;
+        margin-top: 1rem;
+    }
+    img{
+        width: 70%;
+        height: 70%;
+        border-radius: 0.5rem;
+        transform: scale(1);
+    }
+    &_titulo{
+        margin: 1.5rem 1rem;
+        margin-bottom: 2rem;
+        font-size: 23px;
+        font-family:'Roboto Condensed', sans-serif;
+        color: white;
+    }
+    &_item:hover{
+        opacity: 0.5;
+
+        img{
+            animation: pulse 1.5s infinite;
+        }
+        h1{
+            color: rgb(85, 185, 85);
+        }
+    }
+}
+
+

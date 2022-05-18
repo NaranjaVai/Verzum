@@ -1,0 +1,44 @@
+.gender{
+    &__titulo{
+        padding-top: 1rem;
+        padding-left: 1.5rem;
+        color: white;
+        font-family:'Roboto Condensed', sans-serif;
+        font-size: 25px;
+    }
+    &__main{
+        width: 100%;
+        min-height: 200px;
+    }
+    &Menu{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        row-gap: 1rem;
+        text-align: center;
+        margin-top: 2rem;
+        width: 100%;
+
+        &__item{
+            width: 80%;
+            font-size: 18px;
+            border-style: solid;
+            border-radius: 1rem;
+            border-color: rgba(9, 133, 96, 0.2);
+            background-color: #000;
+        
+            a{  
+                text-decoration: none;
+                color: white;
+
+                &:hover{
+                    color: #24e21e;
+                }
+                }
+            }
+        }
+
+
+    }
+
+

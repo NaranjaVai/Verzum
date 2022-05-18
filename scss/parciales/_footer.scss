@@ -1,0 +1,64 @@
+/*-------------------- FOOTER ---------------------  */
+
+
+footer{
+    padding-top: 1rem;
+    background-color: #151419;
+    min-height: 150px;
+
+    h1{
+        font-family:'Roboto Condensed', sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        margin-top: 1rem;
+    }
+
+}
+
+.footer{
+    &_img{
+        width: 4rem;
+        height: 3rem;
+    }
+    &_fondo{
+        background: #000;
+        width: 100%;
+        padding: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+
+        p {
+            float: center;
+            font-size: 14px;
+            word-spacing: 2px;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    &_noticias{
+        display: flex;
+        justify-content: flex-start;
+        gap: 0.5rem;
+
+        p {
+            margin-left: 1rem;
+            color: white;
+        }
+    }
+    &Principal{
+        display: flex;
+        margin-left: 2rem;
+        justify-content: center;
+        height: 100px;
+        align-items: center;
+        gap: 2rem;
+    }
+
+}
+
+
