@@ -1,0 +1,45 @@
+$colors:(
+
+ blanco:white,
+ negro: black,
+ violeta: #b276da,
+ bordeviolet:#c20cb9,
+ rosa:#f00df0,
+ celeste:#00ffff,
+ verdin:#95bd4b,
+ lima:#55b955,
+ azul:#166092,
+ grisnegro:#151419,
+ bordegris:#303436,
+ turquesa:rgb(9, 134, 96),
+ verdeclaro:#24e21e,
+ amarillo:#eeff04
+);
+
+$blanco: map-get($colors, blanco);
+$negro:map-get($colors, negro );
+$violeta:map-get($colors , violeta );
+$bordeviolet:map-get($colors, bordeviolet );
+$rosa:map-get($colors , rosa );
+$celeste:map-get($colors, celeste);
+$verdin:map-get($colors, verdin );
+$lima:map-get($colors, lima );
+$azul:map-get($colors, azul );
+$grisnegro:map-get($colors, grisnegro );
+$bordegris:map-get($colors, bordegris );
+$turquesa:map-get($colors,turquesa );
+$verdeclaro:map-get($colors, verdeclaro );
+$amarillo:map-get($colors, amarillo);
+
+
+@mixin DGrid($columns,$rows,$gap)
+{
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows; 
+    text-align: center;   
+    row-gap: $gap;
+}
+
+
+

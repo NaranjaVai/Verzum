@@ -3,7 +3,7 @@
     position: relative;
     width: 100%;
     min-height: 200px;
-    background-color: rgb(0, 00, 0);
+    background-color: $negro;
 
     img{
         width: 100%;
@@ -17,7 +17,7 @@
         position: absolute;
         transform: translate(-50%,-200%);
         font-size: 40px;
-        color: white;
+        color: $blanco;
     }
 
     p {
@@ -26,7 +26,7 @@
         position: absolute;
         transform: translate(-45%,-50%);
         font-size: 20px;
-        color: white;
+        color: $blanco;
     }
 
     a {
@@ -34,16 +34,16 @@
         left: 50%;
         position: absolute;
         transform: translate(-50%,200%);
-        border:2px solid black;
+        border:2px solid $negro;
         border-radius: 0.3rem;
-        background-color: #95bd4b;
-        color: #fff;
+        background-color: $verdin;
+        color: $blanco;
         font-size: 20px;
         text-decoration: none;
 
 
         &:hover{
-            background-color: rgb(22, 96, 146);
+            background-color: $azul;
         }
         }
     }

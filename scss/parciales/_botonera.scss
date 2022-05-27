@@ -3,19 +3,20 @@
 
 
 .botonera{
-    display: grid;
-    margin-top: 2rem;
-    width: 100%;
+    @include DGrid(repeat(13, 1fr),repeat(2, 1fr), 2rem);
+    /* display: grid;
     grid-template-columns: repeat(13, 1fr);
     grid-template-rows: repeat(2,1fr);
     row-gap: 0.5rem;
-    text-align: center;
+    text-align: center; */
+    margin-top: 2rem;
+    width: 100%;
 
     &__item{
         text-align: center;
     
         img{
-            background-color: rgb(178, 118, 218);
+            background-color: $violeta;
             border-radius: 1rem;
             width: 50%;
         }

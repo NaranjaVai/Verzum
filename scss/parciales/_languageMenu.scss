@@ -12,7 +12,7 @@
     &__titulo{
         padding-top: 1rem;
         padding-left: 1.5rem;
-        color: white;
+        color: $blanco;
         font-family:'Roboto Condensed', sans-serif;
         font-size: 25px;
     }   
@@ -20,34 +20,35 @@
         padding-top: 1rem;
         padding-left: 1.5rem;
         margin-top: 1rem;
-        color: white;
+        color: $blanco;
         font-family:'Roboto Condensed', sans-serif;
         font-size: 25px;
     }
     &Menu{
-        display: grid;
-        padding-left: 1rem;
-        margin-top: 2rem;
-        width: 100%;
+        @include DGrid(repeat(6, 1fr),repeat(1, 1fr), 1rem);
+        /* display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(1,1fr);
         row-gap: 1rem;
-        text-align: center;
+        text-align: center; */
+        padding-left: 1rem;
+        margin-top: 2rem;
+        width: 100%;
 
         &__item{
             width: 80%;
             font-size: 18px;
             border-style: solid;
             border-radius: 1rem;
-            border-color: rgba(194, 12, 185, 0.61);
-            background-color: #000;
+            border-color: rgba($bordeviolet, 0.61);
+            background-color: $negro;
 
             a{
                 text-decoration: none;
-                color: white;
+                color: $blanco;
 
                 &:hover{
-                    color: #f00df0;
+                    color: $rosa;
                 }
             }
         }

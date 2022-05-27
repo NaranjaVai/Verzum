@@ -1,14 +1,51 @@
 /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 
-    
-    .navPag li + li{
-        display: none;
+    header{
+        background-image: url("../Imagenes/mobileBack.svg");
     }
-    .navPag li:last-child{
+
+    .menu__linea{
         display: block;
     }
-    
+    .logo2 img{
+        display: block;
+    }
+    .navPag{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+        margin-left: 1rem;
+
+        &_item:first-child{
+            margin-left: 0;
+        }
+
+        &_item:last-child{
+            display: block; 
+            position: absolute;
+            top: 6%;
+            left: 80%;
+        }
+    }   
+
+    #lateral{
+        display: block;
+        background-color: rgba($color: #000000, $alpha: 0.9);
+        height: 100vh;
+        width: 80%;
+        position: fixed;
+        z-index: 100;
+        top: -100%;
+        left: 0;
+        transition: top 0.5s;
+    }
+
+    #lateral:target{
+        top: 0;
+    }
+
+   
 
     .estreno img{
         height: 400px;

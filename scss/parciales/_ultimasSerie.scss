@@ -1,21 +1,22 @@
 
 .ultimasAgregadas{
-    display: grid;
+    @include DGrid(repeat(5, 1fr),repeat(1, 1fr), 2rem);
+    /* display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr); 
     text-align: center;
+    row-gap: 2rem; */
     margin-left: 1rem;
     margin-bottom: 6rem;
-    row-gap: 2rem;
 
     h1{
         font-family:'Roboto Condensed', sans-serif;
-        color: white;
+        color: $blanco;
         font-size: 25px;
         margin-top: 1rem;
     }
     h3{
-        color: white;
+        color: $blanco;
     }
     img{
         width: 80%;
@@ -33,7 +34,7 @@
                 animation: pulse 1.5s infinite;
             }
             h1,h3{
-                color: rgb(238, 255, 4);
+                color: $amarillo;
             }
         }
 
@@ -44,7 +45,7 @@
         margin-bottom: 2rem;
         font-size: 23px;
         font-family:'Roboto Condensed', sans-serif;
-        color: white;
+        color: $blanco;
     }
 
 

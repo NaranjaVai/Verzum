@@ -1,0 +1,20 @@
+En el archivo index.html y en las otras 4 paginas sumé el SEO con las siguientes características:
+
+Descripción: mediante la etiqueta meta name description, 
+agregué el siguiente párrafo que explica el contenido de mi sitio: 
+
+INDEX “Encontrarás las mejores estrenos de peliculas y series para ver online"
+PELICULAS “Encontrarás las mejores estrenos de peliculas por orden Alfabetico"
+SERIES  “Encontrarás las mejores estrenos de series y los ultimos Capitulos subidos en orden Alfabetico"
+GENEROS “Encontrarás las mejores estrenos en el genero que desees ver"
+IDIOMA  “Encontrarás las mejores estrenos de series y series en el idioma y con los subtitulos que quieras"
+
+
+keywords: mediante la etiqueta keywords, agregué las palabras clave: "
+
+
+INDEX       “PELICULAS,SERIES,ONLINE,ESTRENOS,PELICULAS EN ESPAÑOL,SERIES EN ESPAÑOL"
+PELICULAS   “PELICULAS,ONLINE,ESTRENOS,PELICULAS EN ESPAÑOL"
+SERIES      “SERIES,ONLINE,ESTRENOS,SERIES EN ESPAÑOL"
+GENEROS     “SERIES,ONLINE,ESTRENOS,PELICULAS,ACCION,COMEDIA,DRAMA,TERROR,SCI-FI"
+IDIOMA      “SERIES,ONLINE,ESTRENOS,INGLES,ESPAÑOL,FRANCES"

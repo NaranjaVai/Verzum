@@ -3,13 +3,13 @@
 
 footer{
     padding-top: 1rem;
-    background-color: #151419;
+    background-color: $grisnegro;
     min-height: 150px;
 
     h1{
         font-family:'Roboto Condensed', sans-serif;
         text-align: center;
-        color: white;
+        color: $blanco;
         font-size: 30px;
         margin-top: 1rem;
     }
@@ -22,7 +22,7 @@ footer{
         height: 3rem;
     }
     &_fondo{
-        background: #000;
+        background: $negro;
         width: 100%;
         padding: 20px;
         padding-bottom: 20px;
@@ -32,7 +32,7 @@ footer{
             float: center;
             font-size: 14px;
             word-spacing: 2px;
-            color: white;
+            color: $blanco;
         }
 
         a {
@@ -47,7 +47,7 @@ footer{
 
         p {
             margin-left: 1rem;
-            color: white;
+            color: $blanco;
         }
     }
     &Principal{
