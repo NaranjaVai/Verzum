@@ -1,5 +1,5 @@
 /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
+@media (max-width: 680.98px) {
 
     header{
         background-image: url("../Imagenes/mobileBack.svg");
@@ -16,6 +16,7 @@
         gap: 2rem;
         align-items: flex-start;
         margin-left: 1rem;
+        margin-top: 3rem;
 
         &_item:first-child{
             margin-left: 0;
@@ -24,10 +25,16 @@
         &_item:last-child{
             display: block; 
             position: absolute;
-            top: 6%;
-            left: 80%;
+            left: 85%;
+            bottom: 98%;
         }
     }   
+
+    .logo{
+        width: 200px !important;
+        height: 100px !important;
+        transform: translate(-25%,-80%) !important;
+    } 
 
     #lateral{
         display: block;
@@ -126,7 +133,19 @@
 
 
 /* `md` applies to small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) { }
+@media (max-width: 850px) { 
+    
+    .logo{
+    
+        position: absolute;
+        width: 300px !important;
+        height: 100px !important;
+        aspect-ratio: 16 /9;
+        transform: translate(-30%, -50%);
+} 
+
+
+}
 
 /* `lg` applies to medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) { }

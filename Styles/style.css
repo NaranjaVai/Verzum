@@ -5,16 +5,16 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body {
-  background-color: #181a1b;
-}
-
 header {
   width: 100%;
   height: 80px;
   background-image: url("../Imagenes/layered2.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+main {
+  overflow: hidden;
 }
 
 .navPag {
@@ -29,6 +29,7 @@ header {
 
 .navPag_item {
   list-style: none;
+  margin-top: 0.5rem;
   margin-right: 2rem;
   font-size: 1.3rem;
 }
@@ -57,12 +58,6 @@ header {
   height: 30px;
 }
 
-.navPag_item .navPag__camera {
-  width: 2rem;
-  margin-left: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .navPag__img {
   height: 1.5rem;
   width: 1.5rem;
@@ -70,6 +65,13 @@ header {
 
 .navPag__img:hover {
   opacity: 0.45;
+}
+
+.logo {
+  position: absolute;
+  width: 500px !important;
+  height: 100px !important;
+  transform: translate(-30%, -50%);
 }
 
 .logo2 img {
@@ -145,6 +147,21 @@ header {
 
 .opacityImg {
   opacity: 0.5;
+}
+
+.vidBack {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.vidBack video {
+  position: fixed;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+  height: 100vh;
+  z-index: -10;
 }
 
 .ultimas {
@@ -778,7 +795,7 @@ footer h1 {
 }
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
+@media (max-width: 680.98px) {
   header {
     background-image: url("../Imagenes/mobileBack.svg");
   }
@@ -793,6 +810,7 @@ footer h1 {
     gap: 2rem;
     align-items: flex-start;
     margin-left: 1rem;
+    margin-top: 3rem;
   }
   .navPag_item:first-child {
     margin-left: 0;
@@ -800,8 +818,13 @@ footer h1 {
   .navPag_item:last-child {
     display: block;
     position: absolute;
-    top: 6%;
-    left: 80%;
+    left: 85%;
+    bottom: 98%;
+  }
+  .logo {
+    width: 200px !important;
+    height: 100px !important;
+    transform: translate(-25%, -80%) !important;
   }
   #lateral {
     display: block;
@@ -879,6 +902,16 @@ footer h1 {
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px)*/
+@media (max-width: 850px) {
+  .logo {
+    position: absolute;
+    width: 300px !important;
+    height: 100px !important;
+    aspect-ratio: 16 /9;
+    transform: translate(-30%, -50%);
+  }
+}
+
 /* `lg` applies to medium devices (tablets, less than 992px)*/
 /* `xl` applies to large devices (desktops, less than 1200px)*/
 /* `xxl` applies to x-large devices (large desktops, less than 1400px)*/
