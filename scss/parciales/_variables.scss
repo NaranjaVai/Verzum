@@ -13,6 +13,7 @@ $colors:(
  bordegris:#303436,
  turquesa:rgb(9, 134, 96),
  verdeclaro:#24e21e,
+ fondo:#24333c,
  amarillo:#eeff04
 );
 
@@ -29,6 +30,7 @@ $grisnegro:map-get($colors, grisnegro );
 $bordegris:map-get($colors, bordegris );
 $turquesa:map-get($colors,turquesa );
 $verdeclaro:map-get($colors, verdeclaro );
+$fondo:map-get($colors, fondo);
 $amarillo:map-get($colors, amarillo);
 
 

@@ -1,22 +1,11 @@
 
-.mainGeneros{
-    background-image: url(../ImagenesGeneros/FondoGeneros.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 800px;
-}
 
 .genderTypeBox{
         @include DGrid(repeat(5, 1fr),repeat(2, 1fr), 2rem);
-        /* display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 2rem;
-        text-align: center; */
         margin-left: 1rem;
         margin-top: 2rem;
         border-style: solid none none none;
-        border-color: $blanco;    /* cambiar a gradiente */
+        border-color: $blanco;   
         padding-top: 2rem;
         padding-bottom: 1rem;
  

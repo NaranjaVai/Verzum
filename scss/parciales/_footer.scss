@@ -3,16 +3,17 @@
 
 footer{
     padding-top: 1rem;
-    background-color: $grisnegro;
+    background-color: rgba(13, 44, 128, 0.192);
     min-height: 150px;
 
-    h1{
-        font-family:'Roboto Condensed', sans-serif;
-        text-align: center;
-        color: $blanco;
-        font-size: 30px;
-        margin-top: 1rem;
+    .flexLogo{
+        display: flex;
+        justify-content: center;
+    
     }
+    
+    
+   
 
 }
 
