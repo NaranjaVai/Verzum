@@ -3,6 +3,9 @@
 
     header{
         background-image: url("../Imagenes/mobileBack.svg");
+        position: sticky;
+        top: 0;
+        z-index: 100;
     }
 
     .menu__linea{
@@ -77,6 +80,17 @@
     .pelisyseries,.peliculas__nombre,.series__nombre,.ultimasAgregadas, .genderTypeBox, .languageTypeBox {
         grid-template-columns:1fr;
         row-gap: 0.5rem;
+        margin-left: 0;
+
+        &__item{
+            margin: auto;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .peliculasnombre__item, .seriesNombre__item{
+        margin: auto;
+        margin-bottom: 1rem;
     }
 
     .ultimas img, .pelisyseries img, .peliculas__nombre img, .ultimasAgregadas img ,.genderTypeBox img, .languageTypeBox img{
@@ -125,7 +139,14 @@
         height: 100%;
         }
     }
-    
+    .flexLogo{
+        img{
+            width: 100%;
+        }
+    }
+    .genderMenu__item{
+        font-size: 12px;
+    }
 }
 
 

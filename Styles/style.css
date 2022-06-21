@@ -32,6 +32,7 @@ main {
   margin-top: 0.5rem;
   margin-right: 2rem;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 
 .navPag_item a {
@@ -97,6 +98,10 @@ main {
   top: 2%;
 }
 
+.fondoModal {
+  background-color: #24333c;
+}
+
 .estreno {
   position: relative;
   width: 100%;
@@ -153,6 +158,8 @@ main {
   position: relative;
   width: 100%;
   height: 100%;
+  background-color: black;
+  z-index: -11;
 }
 
 .vidBack video {
@@ -170,11 +177,6 @@ main {
   grid-template-rows: repeat(2, 1fr);
   text-align: center;
   row-gap: 2rem;
-  /* display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr); 
-    row-gap: 2rem;
-    text-align: center; */
   margin-left: 1rem;
 }
 
@@ -232,6 +234,7 @@ main {
 
 .sectionPelis {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   border-style: solid none none none;
   border-color: black;
   border-width: .3rem;
@@ -243,11 +246,6 @@ main {
   grid-template-rows: repeat(2, 1fr);
   text-align: center;
   row-gap: 2rem;
-  /* display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 2rem;
-    text-align: center; */
   margin-left: 1rem;
 }
 
@@ -288,16 +286,13 @@ main {
 /*-------------------- FOOTER ---------------------  */
 footer {
   padding-top: 1rem;
-  background-color: #151419;
+  background-color: rgba(13, 44, 128, 0.192);
   min-height: 150px;
 }
 
-footer h1 {
-  font-family: 'Roboto Condensed', sans-serif;
-  text-align: center;
-  color: white;
-  font-size: 30px;
-  margin-top: 1rem;
+footer .flexLogo {
+  display: flex;
+  justify-content: center;
 }
 
 .footer_img {
@@ -344,11 +339,6 @@ footer h1 {
   gap: 2rem;
 }
 
-.section__botonera {
-  background-image: url("../ImagenesPeliculas/PoligonosAzules.svg");
-  background-size: cover;
-}
-
 .peliculas__main {
   width: 100%;
   min-height: 200px;
@@ -368,11 +358,6 @@ footer h1 {
   grid-template-rows: repeat(2, 1fr);
   text-align: center;
   row-gap: 2rem;
-  /* display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    text-align: center;
-    row-gap: 2rem; */
   margin-left: 1rem;
   margin-top: 2rem;
   border-style: solid none none none;
@@ -416,11 +401,6 @@ footer h1 {
   grid-template-rows: repeat(2, 1fr);
   text-align: center;
   row-gap: 2rem;
-  /* display: grid;
-    grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: repeat(2,1fr);
-    row-gap: 0.5rem;
-    text-align: center; */
   margin-top: 2rem;
   width: 100%;
 }
@@ -437,12 +417,6 @@ footer h1 {
 
 .botonera__item:hover {
   opacity: 0.7;
-}
-
-.fondoMain {
-  background-image: url("../ImagenesSeries/PoligonosNaranja.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .series__main {
@@ -468,11 +442,6 @@ footer h1 {
   grid-template-rows: repeat(2, 1fr);
   text-align: center;
   row-gap: 2rem;
-  /* display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, 1fr); 
-        row-gap: 2rem;
-        text-align: center; */
   margin-top: 2rem;
   margin-left: 1rem;
 }
@@ -526,11 +495,6 @@ footer h1 {
   grid-template-rows: repeat(1, 1fr);
   text-align: center;
   row-gap: 2rem;
-  /* display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr); 
-    text-align: center;
-    row-gap: 2rem; */
   margin-left: 1rem;
   margin-bottom: 6rem;
 }
@@ -577,29 +541,16 @@ footer h1 {
   color: white;
 }
 
-.mainGeneros {
-  background-image: url(../ImagenesGeneros/FondoGeneros.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 800px;
-}
-
 .genderTypeBox {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
   text-align: center;
   row-gap: 2rem;
-  /* display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 2rem;
-        text-align: center; */
   margin-left: 1rem;
   margin-top: 2rem;
   border-style: solid none none none;
   border-color: white;
-  /* cambiar a gradiente */
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
@@ -651,11 +602,6 @@ footer h1 {
   grid-template-rows: repeat(3, 1fr);
   text-align: center;
   row-gap: 1rem;
-  /* display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(3,1fr);
-        row-gap: 1rem;
-        text-align: center; */
   margin-top: 2rem;
   width: 100%;
 }
@@ -678,28 +624,15 @@ footer h1 {
   color: #24e21e;
 }
 
-.language__main {
-  background-image: url(../ImagenesIdioma/FondoRojo.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 800px;
-}
-
 .languageTypeBox {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
   text-align: center;
   row-gap: 2rem;
-  /* display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            text-align: center;
-            row-gap: 2rem; */
   margin-left: 1rem;
   border-style: solid none none none;
   border-color: #303436;
-  /* cambiar a gradiente */
   padding-top: 3rem;
   padding-bottom: 1rem;
 }
@@ -766,11 +699,6 @@ footer h1 {
   grid-template-rows: repeat(1, 1fr);
   text-align: center;
   row-gap: 1rem;
-  /* display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(1,1fr);
-        row-gap: 1rem;
-        text-align: center; */
   padding-left: 1rem;
   margin-top: 2rem;
   width: 100%;
@@ -798,6 +726,9 @@ footer h1 {
 @media (max-width: 680.98px) {
   header {
     background-image: url("../Imagenes/mobileBack.svg");
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
   .menu__linea {
     display: block;
@@ -860,6 +791,15 @@ footer h1 {
   .pelisyseries, .peliculas__nombre, .series__nombre, .ultimasAgregadas, .genderTypeBox, .languageTypeBox {
     grid-template-columns: 1fr;
     row-gap: 0.5rem;
+    margin-left: 0;
+  }
+  .pelisyseries__item, .peliculas__nombre__item, .series__nombre__item, .ultimasAgregadas__item, .genderTypeBox__item, .languageTypeBox__item {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  .peliculasnombre__item, .seriesNombre__item {
+    margin: auto;
+    margin-bottom: 1rem;
   }
   .ultimas img, .pelisyseries img, .peliculas__nombre img, .ultimasAgregadas img, .genderTypeBox img, .languageTypeBox img {
     width: 90%;
@@ -898,6 +838,12 @@ footer h1 {
     margin-top: 1.5rem;
     width: 50%;
     height: 100%;
+  }
+  .flexLogo img {
+    width: 100%;
+  }
+  .genderMenu__item {
+    font-size: 12px;
   }
 }
 

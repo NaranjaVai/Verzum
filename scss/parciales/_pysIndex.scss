@@ -1,6 +1,7 @@
 
 .sectionPelis{
     margin-top: 1rem;
+    margin-bottom: 1rem;
     border-style: solid none none none;
     border-color: $negro;
     border-width: .3rem;
@@ -8,11 +9,6 @@
     
 .pelisyseries{
     @include DGrid(repeat(5, 1fr),repeat(2, 1fr), 2rem);
-    /* display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 2rem;
-    text-align: center; */
     margin-left: 1rem;
 
     h1{

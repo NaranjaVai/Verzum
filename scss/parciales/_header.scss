@@ -34,6 +34,7 @@ main{
         margin-top: 0.5rem;
         margin-right: 2rem;
         font-size: 1.3rem;
+        cursor: pointer;
 
         & a{
             text-decoration: none;
@@ -105,4 +106,6 @@ main{
     }
 }
 
-
+.fondoModal{
+    background-color: $fondo;
+}

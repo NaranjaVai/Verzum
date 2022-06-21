@@ -1,21 +1,11 @@
 
 .language{
-        &__main{
-            background-image: url(../ImagenesIdioma/FondoRojo.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            min-height: 800px;
-        }
+        
         &TypeBox{
             @include DGrid(repeat(5, 1fr),repeat(2, 1fr), 2rem);
-            /* display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            text-align: center;
-            row-gap: 2rem; */
             margin-left: 1rem;
             border-style: solid none none none;
-            border-color: $bordegris;    /* cambiar a gradiente */
+            border-color: $bordegris;    
             padding-top: 3rem;
             padding-bottom: 1rem;
             

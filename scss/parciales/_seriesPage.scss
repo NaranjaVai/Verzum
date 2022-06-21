@@ -1,9 +1,3 @@
-.fondoMain{
-    background-image: url("../ImagenesSeries/PoligonosNaranja.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 
 .series{
 
@@ -25,11 +19,6 @@
 
     &__nombre{
         @include DGrid(repeat(5, 1fr),repeat(2, 1fr), 2rem);
-        /* display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, 1fr); 
-        row-gap: 2rem;
-        text-align: center; */
         margin-top: 2rem;
         margin-left: 1rem;
 
